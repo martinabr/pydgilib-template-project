@@ -1,0 +1,21 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+ipykernel = "*"
+sortedcontainers = "*"
+serial = "*"
+pandas = "*"
+pivottablejs = "*"
+numpy = "*"
+matplotlib = "*"
+pydgilib = "*"
+wxpython = "*"
+lmfit = "*"
+
+[requires]
+python_version = "3.7"
