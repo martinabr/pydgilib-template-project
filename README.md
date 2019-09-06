@@ -15,8 +15,8 @@ Windows is required. Linux is optional, but can be used.
 In Windows, the following are required:
 
 - [Python 3.7+ 64-bit](https://www.python.org/downloads/): Can be installed in
-  `C:\Python37`. _Can be a good idea to add this version of Python to Windows'
-  PATH._
+  `C:\Python37`. _**Can be a good idea to add this version of Python to Windows'
+  PATH.**_
 
 - [Python 3.7+ 32-bit](https://www.python.org/downloads/): Can be installed in
   `C:\Python37-32\`. _This version of Python should not be added to Windows'
@@ -40,28 +40,21 @@ If using Linux, the following would be required:
 - `pipenv`: Either on Ubuntu or on ArchLinux, in the terminal, run
   either `sudo pip install pipenv` or just `pip install pipenv` in the terminal.
 
-Linux does not need to install Python 3.7+ 32-bit. It is not be able to interact
+Linux is not be able to interact
 with the 32-bit only `dgilib.dll` and connect to the board, in order to do
-measurements. Therefore, it does not need this variant of Python.
+measurements. Therefore, it does not need the 32-bit Python installed.
 
 ## Installation
-
-In the [Requirements](#requirements) section, you were instructed to install
-some software packages manually. Now, the rest of the necessary requirements
-can be installed using the `pipenv` tool. However, some extra commands are
-needed before everything becomes easy. There will be two `pipenv`
-environments, one that will use the 32-bit Python and one that will use
-the 64-bit Python.
 
 Considering `.` is the location of the cloned repo, then:
 
 - On Windows:
 
   - Open the command line.
-      
-     - _Optionally:_ You can use
-    `open_cmd_administrator.cmd` at the root of the folder in order to open
-    a command line with administrator privileges.
+
+    - _Optionally:_ You can use
+      `open_cmd_administrator.cmd` at the root of the repo in order to open
+      a command line with administrator privileges.
 
   - Go to `./Python/Experiments`.
 
@@ -70,7 +63,16 @@ Considering `.` is the location of the cloned repo, then:
 
     - Then navigate to the folder using the `cd` command.
 
-  - Run `pipenv install --python C:\Python36-32\python.exe` where `pipenv
+  - Run `pipenv install --python C:\Python36-32\python.exe` where
+    `C:\Python36-32` is the path where you installed the 32-bit Python.
+
+- On either Linux or Windows:
+
+  - Open the command line / terminal.
+  - Go to `./Python/Plots`.
+
+  - Run `pipenv install`. This should automatically use the 64-bit Python
+    (especially on Windows if you selected the )
 
 ## Tutorial
 
