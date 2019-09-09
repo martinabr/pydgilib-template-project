@@ -3,3 +3,10 @@
 **/.vscode
 **/.vs
 ./README-draft.md
+README-draft\.md
+
+Python/Experiments/log_power\.csv
+
+Python/Experiments/log_gpio\.csv
+
+\.\.bfg-report/
