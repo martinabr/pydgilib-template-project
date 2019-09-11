@@ -30,6 +30,11 @@ In Windows, the following are required to be installed by you:
 - `pipenv`: Can be installed by opening a command line window in Windows and
   writing `pip install pipenv`.
 
+- If using [Anaconda](https://www.anaconda.com/distribution/) the first two steps above also apply (downloading 64-bit and 32-bit). For the different virtual environments open the Anaconda Navigator for the correct architecture. For pydgilib use x32 and create a new environment. Install `matplotlib` first. For `pydgilib` do
+`conda config --set pip_interop_enabled True`
+`pip install pydgilib`
+`conda update --all`
+
 If using Linux, the following would be required:
 
 - Python 3.7+ 64-bit: On Ubuntu, run `sudo apt-get install python3` in the
