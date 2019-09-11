@@ -10,3 +10,10 @@ Python/Experiments/log_power\.csv
 Python/Experiments/log_gpio\.csv
 
 \.\.bfg-report/
+*.d
+*.o
+*.cproj
+*.elf
+*.lss
+*.map
+BeginnerProject-ARM/BeginnerProject/BeginnerProject.componentinfo.xml
